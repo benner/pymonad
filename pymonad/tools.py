@@ -106,7 +106,7 @@ def kleisli_compose(
 
       Example:
         def fail_if_zero(x):
-            return Nothing if x is zero else Just(x)
+            return Nothing if x == 0 else Just(x)
 
         def add1(x):
             return Just(x + 1)
